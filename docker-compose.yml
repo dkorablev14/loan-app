@@ -23,7 +23,7 @@ services:
       - app-network
 
   db:
-    image:
+    image: postgres:13
     environment:
       POSTGRES_DB: loan_app_db
       POSTGRES_USER: root

@@ -12,7 +12,7 @@ This project provides a REST API for submitting loan applications. Users can sub
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourname/loan-app-api.git
+    git clone https://github.com/dkorablev14/loan-app.git
     ```
 
 2. Install dependencies:
@@ -26,7 +26,7 @@ This project provides a REST API for submitting loan applications. Users can sub
 
 1. Build and run containers:
     ```bash
-    docker-compose up --build
+    docker-compose up --d
     ```
 
 2. Run migrations to set up the database:
@@ -36,8 +36,8 @@ This project provides a REST API for submitting loan applications. Users can sub
    
 ## API Usage
 
-### Submit Loan Request
-Endpoint: `POST /requests`
+### Create Loan
+Endpoint: `POST loan/create`
 
 Request body:
 ```json
@@ -46,3 +46,7 @@ Request body:
   "amount": 3000,
   "term": 30
 }
+```
+
+### Process Loans
+Endpoint: `GET loan/processor?delay=5`
