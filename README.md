@@ -1,9 +1,13 @@
-# Loan Application API
+# Time
+Time spent: ~2 hours
 
+
+# Loan Application API
 This project provides a REST API for submitting loan applications. Users can submit loan requests, which are stored in a database.
 
+
 ## Requirements
-- PHP 7.4 or higher
+- PHP 8.2 or higher
 - Yii2 Framework
 - Docker and Docker Compose (optional, for containerized environment)
 - PostgreSQL
